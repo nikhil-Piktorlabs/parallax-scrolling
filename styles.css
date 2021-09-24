@@ -1,0 +1,46 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.image {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.image--1 {
+  background-image: url("images/forest.jpg");
+}
+
+.image--2 {
+  background-image: url("images/beach.jpg");
+}
+
+.image--3 {
+  background-image: url("images/mountain.jpg");
+}
+
+.caption {
+  position: absolute;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: font-size 0.5s;
+}
+
+@media screen and (max-width: 700px) {
+  .caption {
+    font-size: 100px;
+  }
+}
+
+.text {
+  padding: 40px;
+}
